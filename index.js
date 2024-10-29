@@ -67,6 +67,15 @@ assert(
 mswServer.listen({ onUnhandledRequest: "bypass" });
 
 const result2 = await axios.post("/mypath");
+
+// This below works => likely a problem with axios-cookiejar-support
+//
+// const result2 = await axios.post("/mypath", {}, {
+//   headers: {
+//     'Cookie': 'key=value'
+//   }
+// });
+
 assert(
   result2.data.cookieHeader === "key=value",
   "After turning on MSW server"

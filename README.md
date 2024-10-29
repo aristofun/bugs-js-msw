@@ -1,10 +1,10 @@
-# Node.js template
+# Bug with MSW and axios + tough-cookie 
 
-This is a Node.js project.
+COnfirmed on Node 20.17.0 on macOS 14 and 15
 
-Add your [configuration](https://codesandbox.io/docs/projects/learn/setting-up/tasks) to optimize it for [CodeSandbox](https://codesandbox.io/p/dashboard).
+1. Download 
+2. `yarn && yarn start`
+3. See how it fails only after turning on `msw` with bypassing unhandled requests
+4. Either change msw version to `2.4.3` in `package.json` or comment out turning on msw
+5. See no errors anymore
 
-## Resources
-
-- [CodeSandbox — Docs](https://codesandbox.io/docs/learn)
-- [CodeSandbox — Discord](https://discord.gg/Ggarp3pX5H)
