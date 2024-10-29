@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch index.js"
+  },
+  "keywords": [],
+  "author": "Ives van Hoorne",
+  "license": "MIT",
+  "devDependencies": {
+    "axios": "^1.7.7",
+    "msw": "2.5.1",
+    "tough-cookie": "^5.0.0",
+    "axios-cookiejar-support": "^5.0.3"
+  },
+  "dependencies": {
+  }
+}
